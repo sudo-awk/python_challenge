@@ -1,0 +1,25 @@
+#!/usr/bin/python3
+
+freq = {}
+
+with open ("char.txt", "r") as f:
+	pload = f.read()
+	# print(pload)
+
+
+	for i in pload:
+		# print(i, end='')
+		if i in freq:
+			freq[i] += 1 
+			# print(freq)
+		else:
+			freq[i] = 1
+print(freq, end='\n')
+
+
+##This is the results in stdout
+
+zxczxc@zxczxc-VirtualBox:~/Desktop/python_challenge/level2$ python3 script.py 
+{'%': 6104, '$': 6046, '@': 6157, '_': 6112, '^': 6030, '#': 6115, ')': 6186, '&': 6043, '!': 6079, '+': 6066, ']': 6152, '*': 6034, '}': 6105, '[': 6108, '(': 6154, '{': 6046, '\n': 1220, 'e': 1, 'q': 1, 'u': 1, 'a': 1, 'l': 1, 'i': 1, 't': 1, 'y': 1}
+
+#The answer is 'equality'
